@@ -19,7 +19,7 @@
 
 ## Description
 
-<h6>This project is curretnly on beta version as it has some errors to be fixed and a lot of features to be added in future.</h6>
+<h6>This project is currently on beta version as it has some errors to be fixed and a lot of features to be added in future.</h6>
 
 ## How to install the project
 
