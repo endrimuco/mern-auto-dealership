@@ -11,11 +11,15 @@
 
 
 <p align="center">
-  <a href="#how-to-use">How to install the project</a> •
-  <a href="#download">Description</a> •
-  <a href="#credits">Programming language used</a> •
+  <a href="#how-to-install-the-project">How to install the project</a> •
+  <a href="#description">Description</a> •
+  <a href="#programming-languages-used">Programming language used</a> •
   <a href="#license">License</a>
 </p>
+
+## Description
+
+<h6>This project is curretnly on beta version as it has some errors to be fixed and a lot of features to be added in future.</h6>
 
 ## How to install the project
 
@@ -39,7 +43,7 @@ $ npm start
 > If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
 
-## Credits
+## Programming lanaguages used
 
 This project uses the following open source packages:
 
@@ -47,6 +51,14 @@ This project uses the following open source packages:
 - [ExpressJS](https://expressjs.com/)
 - [ReactJS](https://react.dev/)
 - [NodeJS](https://nodejs.org/)
+
+## Features to be added:
+- Admin dashboard which will be able to CRUD all vehicle cards.
+- Users to be able to write a comment and leave a review.
+
+## Errors to be fixed:
+- Login auth not working.
+- Fix classes clearing out.
 
 ## License
 
