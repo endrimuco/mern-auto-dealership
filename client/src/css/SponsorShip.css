@@ -1,0 +1,61 @@
+.SponsorMainDiv {
+    background-color: #0a1627;
+    border-top: 1px dashed #ea0e4b;
+    border-bottom: 1px dashed #ea0e4b;
+}
+
+.SponsorImages {
+    padding: 8px;
+    margin: auto;
+    width: 85%; 
+}
+
+.SLogos {
+    margin: 15px 95px 15px 20px;
+}
+
+.SponsorLogo1 {
+    width: 70px;
+    height: 70px;
+}
+
+.SponsorLogo2 {
+    width: 60px;
+    height: 50px;
+}
+
+/* Responsive only at Iphone XR */
+
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) {
+
+        .SponsorMainDiv {
+            background-color: #0a1627;
+            border-top: 1px dashed #ea0e4b;
+            border-bottom: 1px dashed #ea0e4b;
+        }
+        
+        .SponsorImages {
+            padding: 8px;
+            margin: auto;
+            width: 85%; 
+        }
+        
+        .SLogos {
+            margin: 5px 75px 25px 23px;
+        }
+        
+        .SponsorLogo1 {
+            width: 70px;
+            height: 70px;
+        }
+        
+        .SponsorLogo2 {
+            width: 70px;
+            height: 50px;
+        }
+        
+     }
+
+     /* Responsive only at Iphone XR */

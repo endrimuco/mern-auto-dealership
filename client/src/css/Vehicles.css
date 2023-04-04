@@ -1,0 +1,121 @@
+.BBred {
+ border: 2px solid red;
+}
+
+.vehicleCard {
+  padding: 10px;
+  width: 300px;
+}
+
+.RowFix {
+  width: 100%;
+}
+
+.vehiclesMainDiv {
+  width: 100%;
+}
+
+.vehicleCardImg {
+ border-radius: 10px 10px 0px 0px;
+ width: 100%;
+ height: 160px;
+}
+
+.vehicleCardBody {
+  border-radius: 0px 0px 10px 10px;
+  background-color: rgba(92, 91, 91, 0.495);
+  height: 200px;
+}
+
+.vehicleCardPriceYear {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,0,0,1) 100%);
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  display: inline-block;
+  color: #fff;
+}
+
+.vehiclePrice {
+  display: inline-block;
+  color: rgb(0, 195, 130);
+  font-weight: bold;
+  width: 50%;
+}
+
+.vehicleYear {
+  display: inline-block;
+  font-weight: bold;
+  width: 50%;
+}
+
+.vehicleCardTitle { 
+  background-color: #0a1627;
+  font-weight: bold;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+  text-align: center;
+}
+
+.vehicleCardYear { 
+  background-color: crimson;
+  text-align: center;
+  font-weight: bold;
+  margin: auto;
+  width: 20%;
+  display: inline-block;
+  color: #fff;
+}
+
+.vehicleCardDes {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #fff;
+  width: 100%;
+  padding-left: 8px;
+  height: 35%;
+}
+
+.vehicleCardBtn {
+  text-align: center;
+}
+
+.vehicleCardBtnB {
+  margin-bottom: 20px;
+  padding: 7px;
+  font-weight: bold;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff;
+  background-color: crimson;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.vehicleCardBtnB:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.281);
+  color: crimson;
+}
+
+.vehCardSpan {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) {
+
+      .RowFix {
+        width: 80%;
+      }
+
+      .imgUpdate {
+        width: 0px;
+        height: auto;
+      }
+ 
+     }
+
+     /* Responsive only at Iphone XR */

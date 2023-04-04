@@ -1,0 +1,18 @@
+.SlideHome {
+    width: 100%;
+}
+
+
+/* Responsive only at Iphone XR */
+
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) {
+
+        .SlideHome {
+            width: 90%;
+        }
+        
+     }
+
+     /* Responsive only at Iphone XR */

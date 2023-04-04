@@ -1,0 +1,145 @@
+.contactContainer {
+    background: #0a1627;
+    width: 100%;
+    padding: 50px;
+
+}
+
+.ContactCard {
+  padding-top: 50px;
+  margin: auto;
+  text-align: center;
+  border: 3px solid #ea0e4b;
+  border-radius: 30px;
+  background: #0a1627;
+  width: 50%;
+  height: 560px;
+
+}
+
+.SentMsg {
+  font-size: 19px;
+  color: rgba(172, 255, 47, 0.777);
+  font-weight: bold;
+}
+
+.ContactFormGroup {
+  display: block;
+  align-items: center;
+  padding: 7px;
+}
+
+.ContactFormGroup2 {
+  display: inline-block;
+}
+
+.ContactSubBtn {
+  justify-content: center;
+  width: 49%;
+  margin: auto;
+  display: flex;
+  padding: 12px;
+  border: 1px solid #ea0e4b;
+  border-radius: 10px;
+  background: #0a1627;
+  color: #fff;
+}
+
+.ContactSubBtn:hover {
+
+  border: 1px solid #ea0e4b;
+  background: #ea0e4b;
+
+}
+
+.ContactTitle {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #fff;
+  margin: auto;
+  width: 35%;
+  border-bottom: 1px solid #ea0e4b;
+  font-size: 35px;
+}
+
+.ContactForm {
+  width: 50%;
+  border: 1.6px solid #ea0e4b;
+  border-radius: 5px;
+  padding: 6px;
+}
+  
+
+/* Responsive only at Iphone XR */
+
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) {
+
+      
+      .ContactCard {
+        padding-top: 55px;
+        margin: auto;
+        text-align: center;
+        border: 3px solid #ea0e4b;
+        border-radius: 30px;
+        background: #0a1627;
+        width: 100%;
+        height: 560px;
+      
+      }
+      
+      .SentMsg {
+        font-size: 19px;
+        color: rgba(172, 255, 47, 0.777);
+        font-weight: bold;
+      }
+      
+      .ContactFormGroup {
+        display: block;
+        align-items: center;
+        padding: 7px;
+      }
+      
+      .ContactFormGroup2 {
+        display: inline-block;
+      }
+      
+      .ContactSubBtn {
+        justify-content: center;
+        width: 69%;
+        margin: auto;
+        display: flex;
+        padding: 12px;
+        border: 1px solid #ea0e4b;
+        border-radius: 10px;
+        background: #0a1627;
+        color: #fff;
+      }
+      
+      .ContactSubBtn:hover {
+      
+        border: 1px solid #ea0e4b;
+        background: #ea0e4b;
+      
+      }
+      
+      .ContactTitle {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #fff;
+        margin: auto;
+        width: 65%;
+        border-bottom: 2px solid #ea0e4b;
+        font-size: 35px;
+      }
+      
+      .ContactForm {
+        margin-top: 5px;
+        width: 70%;
+        border: 1.6px solid #ea0e4b;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      
+     }
+
+     /* Responsive only at Iphone XR */

@@ -1,0 +1,6 @@
+.shopMainDiv {
+   background-image: url("../images/parkingBg.jpg");
+   background-size: cover;
+   width: 100%;
+   height: 100vh;
+}

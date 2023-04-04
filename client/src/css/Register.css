@@ -1,0 +1,201 @@
+.SignUpContainer {
+	width: 100%;
+	min-height: 89.8vh;
+	background-color: #0a1627;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.SignUpFormContainer {
+	width: 900px;
+	height: 500px;
+	display: flex;
+	border-radius: 10px;
+	border: 1px solid #0a1627;
+	box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+		0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+}
+
+.LeftSignUpDiv {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #0a1627;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.LeftSignUpDiv h1 {
+	margin-top: 0;
+	color: white;
+	font-size: 35px;
+	align-self: center;
+}
+
+.RightSignUpDiv {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.FormContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.FormContainer h1 {
+	font-size: 40px;
+	margin-top: 0;
+}
+
+.SignUpInput {
+	outline: none;
+	border: none;
+	width: 370px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #edf5f3;
+	margin: 5px 0;
+	font-size: 14px;
+}
+
+.WhiteBtnSignUp,
+.SignUpBtn {
+	border: none;
+	outline: none;
+	padding: 12px 0;
+	background-color: white;
+	border-radius: 20px;
+	width: 180px;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.WhiteBtnSignUp:hover {
+	background-color: #ea0e4b;
+}
+
+.SignUpBtn:hover {
+	background-color: #0a1627;
+}
+
+.SignUpBtn {
+	background-color: #ea0e4b;
+	color: white;
+	margin: 10px;
+}
+
+
+/* Responsive only at Iphone XR */
+
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) {
+
+        
+		.SignUpContainer {
+			width: 100%;
+			min-height: 92vh;
+			background-color: #0a1627;
+		}
+		
+		.SignUpFormContainer {
+			width: 900px;
+			height: 471px;
+			display: inline-block;
+			border-radius: 10px;
+			border: 1px solid #ea0e4b;
+			box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+				0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+		}
+		
+		.LeftSignUpDiv {
+			background-color: #0a1627;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			border-bottom-left-radius: 0px;
+		}
+		
+		.LeftSignUpDiv h1 {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			color: white;
+			font-size: 35px;
+			align-self: center;
+		}
+		
+		.RightSignUpDiv {
+			margin-top: 30px;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background-color: white;
+			border-top-right-radius: 0px;
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+		}
+		
+		.FormContainer {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		.FormContainer h1 {
+			padding: 15px;
+			font-size: 35px;
+			margin-top: 0;
+		}
+		
+		.SignUpInput {
+			outline: none;
+			border: none;
+			width: 370px;
+			padding: 15px;
+			border-radius: 10px;
+			background-color: #edf5f3;
+			margin: 5px 0;
+			font-size: 14px;
+		}
+		
+		.WhiteBtnSignUp,
+		.SignUpBtn {
+			border: none;
+			outline: none;
+			padding: 12px 0;
+			background-color: white;
+			border-radius: 20px;
+			width: 180px;
+			font-weight: bold;
+			font-size: 14px;
+			cursor: pointer;
+		}
+		
+		.WhiteBtnSignUp:hover {
+			background-color: #ea0e4b;
+		}
+		
+		.SignUpBtn:hover {
+			background-color: #0a1627;
+		}
+		
+		.SignUpBtn {
+			background-color: #ea0e4b;
+			color: white;
+			margin: 10px;
+		}
+        
+
+     }
+
+     /* Responsive only at Iphone XR */

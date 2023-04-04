@@ -1,0 +1,135 @@
+.AboutPage {
+    width: auto;
+    height: 690px;
+	padding: 20px 0px;
+	background: #000000f5;
+}
+
+.TitlePage {
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+.AboutTitle {
+	padding: 0px 0px 6px 0px;
+	font-size: 40px;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.892);
+	line-height: 46px;
+	border-bottom:#ea0e4b solid 1px;
+	width: 260px;
+	margin: 0 auto;
+	margin-bottom: 0px;
+	margin-bottom: 20px;
+}
+
+.AboutSpan {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+	color: #d3cece;
+	font-size: 17px;
+	line-height: 30px;
+    
+}
+.aboutBox {
+
+	max-width: 630px;
+	width: 100%;
+	float: right;
+
+} 
+.AboutTitleCreation {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    width: 450px;
+    color: rgba(255, 255, 255, 0.892);
+    border-bottom: #ea0e4b solid 1px;
+	font-size: 45px;
+	line-height: 25px;
+	padding-bottom: 20px;
+}
+.AboutDescription {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 30px;
+    width: 400px;
+    color: rgba(255, 255, 255, 0.892);
+	font-size: 19px;
+	line-height: 25px;
+} 
+.aboutImg {
+    padding: 15px;
+	margin: 0;
+}
+
+.abImg {
+    box-shadow: 10px 12px 6px rgba(152, 152, 152, 0.208);
+    border-radius: 30px;
+}
+
+.ReadMoreBtnAbt, .ShowLessBtnAbt {
+    text-decoration: none;
+    background: none;
+    border: #ea0e4b solid 1px;
+    width: 186px;
+    padding: 11px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 30px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    transition: ease-in all 0.5s;
+}
+
+.ReadMoreBtnAbt, .ShowLessBtnAbt:hover {
+	border: #ea0e4b solid 1px;
+    background: #ea0e4b;
+    color: #fff;
+    border-radius: 25px;
+    transition: ease-in all 0.5s;
+}
+
+
+/* Responsive only at Iphone XR */
+
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) {
+
+        .AboutPage {
+            width: auto;
+            height: 880px;
+            padding: 70px 0px;
+            background: #000000f5;
+        }
+
+        .AboutTitle {
+
+            border-bottom:#ea0e4b solid 2px;
+
+        }
+
+        .AboutTitleCreation {
+            width: 350px;
+            padding-top: 30px;
+            border-bottom: #ea0e4b solid 2px;
+            font-size: 30px;
+            line-height: 16px;
+        }
+
+        .AboutDescription {
+            width: auto;
+        }
+
+        .AboutSlide {
+            margin: auto;
+            width: 385px !important;
+        } 
+
+     }
+
+     /* Responsive only at Iphone XR */
+

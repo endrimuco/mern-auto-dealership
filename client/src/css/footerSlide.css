@@ -1,0 +1,76 @@
+footer{
+    position: absolute;
+    width: 100%;
+    color: #fff;
+}
+
+.FooterB {
+	background-color: #be1243;
+}
+
+.footerBottom{
+    background: #0a1627;
+    width: 100%;
+    padding: 10px;
+}
+
+.CopyrightText {
+	font-size: 15px;
+	font-weight: bold;
+    word-spacing: 3px;
+	display: flex;
+    float: right;
+	text-align: center;
+}
+
+.SocialMediasBtns {
+	position: relative;
+	display: inline;
+	justify-content: center;
+	padding: 5px;
+}
+
+.contactNumText {
+    font-size: 16px;
+	display: inline-flex;
+	text-align: center;
+	justify-content: center;
+	width: 50%;
+}
+
+.CopyRightText {
+	font-weight: bold;
+}
+
+.CopyRightTextBg {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.footerTextDes {
+	margin: auto;
+	width: 400px;
+	display: inline-block;
+}
+
+.footerInfos {
+	display: inline-block;
+	width: 300px;
+}
+
+
+/* Responsive only at Iphone XR */
+
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) {
+
+        .footerTextDes {
+			margin: auto;
+			width: 300px;
+			display: inline-block;
+		}
+        
+
+     }
+
+     /* Responsive only at Iphone XR */

@@ -1,0 +1,212 @@
+
+.LoginContainer {
+	width: 100%;
+	min-height: 89.8vh;
+	background-color: #0a1627;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.LoginFormContainer {
+	width: 900px;
+	height: 500px;
+	display: flex;
+    border: 1px solid #ea0e4b;
+	border-radius: 10px;
+	box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+		0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+}
+
+.LeftLoginDiv {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.FormContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.FormContainer h1 {
+	font-size: 40px;
+	margin-top: 0;
+}
+
+.LoginInput {
+	outline: none;
+	border: none;
+	width: 370px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #edf5f3;
+	margin: 5px 0;
+	font-size: 14px;
+}
+
+.RightLoginDiv {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #ea0e4b;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.RightLoginDiv h1 {
+	margin-top: 0;
+	color: white;
+	font-size: 40px;
+	align-self: center;
+}
+
+.LoginWhiteBtn,
+.LoginGreenBtn {
+	border: none;
+	outline: none;
+	padding: 12px 0;
+	background-color: white;
+	border-radius: 20px;
+	width: 180px;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.LoginWhiteBtn:hover {
+    color: #fff;
+    background-color: #0a1627;
+}
+
+.LoginGreenBtn:hover {
+    background-color: #ea0e4b;
+}
+
+.LoginGreenBtn {
+	background-color: #0a1627;
+	color: white;
+	margin: 10px;
+}
+
+/* Responsive only at Iphone XR */
+
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) {
+
+        
+.LoginContainer {
+	width: 100%;
+	min-height: 92vh;
+	background-color: #0a1627;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.LoginFormContainer {
+	width: 100%;
+	height: 393px;
+	display: inline-block;
+    border: 1px solid #ea0e4b;
+	border-radius: 10px;
+	box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+		0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+}
+
+.LeftLoginDiv {
+	display: inline-block;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 0px;
+}
+
+.FormContainer {
+	display: inline-block;
+	flex-direction: column;
+	align-items: center;
+}
+
+.FormContainer h1 {
+	font-size: 30px;
+}
+
+.LoginInput {
+	outline: none;
+	border: none;
+	width: 370px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #edf5f3;
+	margin: 5px 0;
+	font-size: 14px;
+}
+
+.RightLoginDiv {
+	width: 100%;
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
+	background-color: #ea0e4b;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.RightLoginDiv h1 {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+	font-size: 30px;
+	align-self: center;
+}
+
+.LoginWhiteBtn {
+	margin-left: 117px;
+    align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: white;
+	border-radius: 20px;
+	width: 180px;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.LoginWhiteBtn:hover {
+    color: #fff;
+    background-color: #0a1627;
+}
+
+.LoginGreenBtn:hover {
+    background-color: #ea0e4b;
+}
+
+.LoginGreenBtn {
+	background-color: #0a1627;
+	color: white;
+	margin: 10px;
+}
+
+        
+
+     }
+
+     /* Responsive only at Iphone XR */

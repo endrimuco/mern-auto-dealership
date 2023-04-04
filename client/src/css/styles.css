@@ -1,0 +1,136 @@
+
+/* NavBar Buttons Home, About, Shop, Contact us - start */
+
+.bgNavColor {
+   background-color: #0a1627; 
+}
+
+.MainLogo {
+  width: 350px;
+  height: 50px;
+}
+
+.navBtns {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    position: relative;
+    color: #ea0e45d9;
+    text-decoration: none;
+    width: 15rem;
+    padding: 10px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.navBtns:hover {
+    color: #ffffff;
+}
+
+.navBtns::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.175rem;
+    background: #ea0e4b;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.navBtns:hover::after {
+    transform: scale(1, 1);
+}
+
+/* NavBar Buttons Home, About, Shop, Contact us - end */
+
+
+/* NavBar Buttons Log in, Sign up - start*/
+  /* .LoginBtn, .RegisterBtn, .CreateVehBtn {
+    color: #00ABE7;
+    border: 2px solid #00ABE7;
+    border-radius: 0px;
+    padding: 12px 15px 9px ;
+    text-decoration: none;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 15px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #00ABE7;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+
+  .slideRight:hover {
+    color: #ffffff;
+    box-shadow: inset 400px 0 0 0 #00ABE7;
+  } */
+
+  .userLoginBtns {
+    margin: auto;
+    color: rgba(232, 23, 27, 0.675);
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    width: 12rem;
+    padding: 2px;
+    margin-left: 20px;
+    border: none;
+    font-size: 1.2rem;
+  }
+
+  .userLoginBtns:hover {
+    color: #ffffff;
+  }
+
+  .userLoginBtns::after {
+    content: '';
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 0.175rem;
+    background: #ea0e4b;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.userLoginBtns:hover::after {
+    transform: scale(1, 1);
+}
+
+/* NavBar Buttons Log in, Sign up - end */
+
+
+/* Responsive only at Iphone 12 Pro */
+
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) {
+
+      .MainLogo {
+        width: 310px;
+        height: 45px;
+      }
+
+      .navBtns {
+        text-align: center;
+        margin-left: 73px;
+        display: inline-block;
+        align-items: center;
+    }
+
+    .userLoginBtns {
+      margin: auto; 
+    }
+
+     }
+
+     /* Responsive only at Iphone 12 Pro */

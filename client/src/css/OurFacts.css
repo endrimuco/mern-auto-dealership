@@ -1,0 +1,163 @@
+.containerTypesInfo {
+    padding-top: 50px;
+    width: 100%;
+    height: 80vh;
+    background-color: #030d1c;
+  }
+
+.TypesInfoTitle {
+    text-align: center;
+    padding: 0px 0px 6px 0px;
+	font-size: 40px;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.892);
+	line-height: 46px;
+	border-bottom:#ea0e4b solid 1px;
+	width: 560px;
+	margin: 0 auto;
+	margin-bottom: 0px;
+	margin-bottom: 20px;
+}
+
+.TypesInfoElectronic, .TypesInfoHybrid {
+    text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.892);
+	line-height: 46px;
+	border-bottom:#ea0e4b solid 1px;
+	width: 160px;
+	margin: 0 auto;
+	margin-bottom: 0px;
+	margin-bottom: 20px;
+}
+
+.TypesInfoDes {
+    color: #fff;
+    margin: auto;
+    font-weight: bold;
+    font-size: 18px;
+    width: 70%;
+}
+
+.containerTypesInfo2 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 85%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+   
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  .flip-card {
+    background-color: transparent;
+    width: 380px;
+    height: 300px;
+    image-orientation: from-image;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    border:2px solid #ea0e4b;
+    background-color: #030d1c;
+    color: #000000;
+    transform: rotateY(180deg);
+  }
+  
+  /* -------------------------------- Card flip animation---------------------------------- */
+  
+
+  /* Responsive only at Iphone XR */
+
+@media only screen 
+and (device-width: 414px) 
+and (device-height: 896px) {
+
+  .containerTypesInfo {
+    padding-top: 50px;
+    width: 100%;
+    height: 100vh;
+    background-color: #030d1c;
+  }
+
+.TypesInfoTitle {
+  text-align: center;
+	font-size: 29px;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.892);
+	line-height: 46px;
+	border-bottom:#ea0e4b solid 2px;
+	width: 380px;
+	margin: 0 auto;
+	margin-bottom: 0px;
+	margin-bottom: 20px;
+}
+
+.TypesInfoElectronic, .TypesInfoHybrid {
+  text-align: center;
+	font-size: 29px;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.892);
+	line-height: 46px;
+	border-bottom:#ea0e4b solid 2px;
+	width: 160px;
+	margin: 0 auto;
+	margin-bottom: 0px;
+	margin-bottom: 20px;
+}
+
+.TypesInfoDes {
+    color: #fff;
+    margin: auto;
+    font-weight: bold;
+    font-size: 23px;
+    width: 85%;
+}
+
+.containerTypesInfo2 {
+    display: inline;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .flip-card {
+    width: 330px;
+    height: 300px;
+  }
+  
+ }
+
+ /* Responsive only at Iphone XR */
