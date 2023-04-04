@@ -46,7 +46,7 @@ This project uses the following open source packages:
 - [MongoDB](https://www.mongodb.com/)
 - [ExpressJS](https://expressjs.com/)
 - [ReactJS](https://react.dev/)
-- [Node.js](https://nodejs.org/)
+- [NodeJS](https://nodejs.org/)
 
 ## License
 
