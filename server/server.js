@@ -45,7 +45,9 @@ mongoose.connect(process.env.MONGODB_URL, {
 app.use(vehicleRouter);
 app.use(authRouter);
 
+const PORT = process.env.PORT;
+
 app.listen(PORT, () => {
-  console.log("Server is running at port ${PORT}");
+  console.log(`Server is running at port ${PORT}`);
 });
 
