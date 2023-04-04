@@ -3,6 +3,9 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const session = require("express-session");
 
+// Connection with .env file (-important-)
+require('dotenv').config();
+
 const vehicleRouter = require("./routes/vehicleRoutes.js");
 const authRouter = require("./routes/authRoutes.js");
 
