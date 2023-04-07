@@ -18,7 +18,7 @@ const Login = () => {
     };
     axios.post("http://localhost:3030/checkLogin", { user }).then((res) => {
       if (res.data.code === 200) {
-        // Pas login kalon tek places
+        // After login it goes to vehicle shop
         localStorage.setItem("loggedIn", true);
         navigate("/");
       } else {

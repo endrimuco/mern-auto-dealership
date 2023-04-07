@@ -12,21 +12,21 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // ruajtja e informacioneve tek user
+    // Saving infos at user model
     const user = {
-      // emri nga models : emri i state
+      
       username: username,
       email: email,
       password: password,
     };
 
-    // Therritja e metodes post ne routerin; the kalimi info tek databasa
+    // Call of post method in router and saving info to database
     axios.post("http://localhost:3030/register", { user }).then((res) => {
       if (res.data.code === 200) {
-        // nese regijstrimi eshte ne rregull do te kalohet tek faqja e login
+        // If the login is completed it will go to login component
         navigate("/login");
       } else {
-        // perndryshe shkaqet error
+        // Else it will be error
         window.alert(res.data.error);
       }
     });

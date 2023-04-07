@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
-// import axios from 'axios';
 
 const Result = () => {
     return (
@@ -10,34 +9,6 @@ const Result = () => {
 
 function ContactComp(props) {
     const [result,showResult] = useState(false);
-    // const [fullName, setFullName] = useState("");
-    // const [phone, setPhone] = useState("");
-    // const [email, setEmail] = useState("");
-    // const [message, setMessage] = useState("");
-
-    // const handleContactSubmitForm = (e) => {
-    //     e.preventDefault();
-    //     const formData = {
-    //         fullName: e.target.fullName.value,
-    //         phone: e.target.phone.value,
-    //         email: e.target.email.value,
-    //         message: e.target.message.value
-    //     }
-    
-    //     axios.post('/api/submit', formData)
-    //       .then((result) => {
-    //           console.log(result.data);
-    //           showResult(true);
-    //       })
-    //       .catch((error) => {
-    //           console.error(error);
-    //       });
-    //       e.target.reset();
-    //   };
-    
-    //   setTimeout(() => {
-    //     showResult(false);
-    //   }, 5000);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -70,8 +41,6 @@ function ContactComp(props) {
 					<label class="ContactFormGroup">
 						<input class="ContactForm" 
                         placeholder='Full Name'
-                        // onChange={(e) => setFullName(e.target.value)}
-                        // value={fullName}
                         type="text"
                         name="fullName" 
                         id="fullName"  
@@ -80,8 +49,6 @@ function ContactComp(props) {
 					<label class="ContactFormGroup">
 						<input class="ContactForm" 
                         placeholder='Phone Number'
-                        // onChange={(e) => setPhone(e.target.value)}
-                        // value={phone}
                         type="number"
                         name="phone" 
                         id="phone"  
@@ -90,8 +57,6 @@ function ContactComp(props) {
 					<label class="ContactFormGroup">
 						<input class="ContactForm" 
                         placeholder='Email' 
-                        // onChange={(e) => setEmail(e.target.value)}
-                        // value={email}
                         type="email"
                         name="email" 
                         id="email"  
@@ -101,8 +66,6 @@ function ContactComp(props) {
 						<textarea class="ContactForm" 
                         rows="3"  
                         placeholder='Your Message!'
-                        // onChange={(e) => setMessage(e.target.value)}
-                        // value={message}
                         type="textarea"
                         name="message" 
                         id="message" 

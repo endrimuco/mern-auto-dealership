@@ -8,7 +8,7 @@ import '../css/styles.css';
 
 const NavigateBar = () => {
   const [log] = useState(localStorage.getItem("loggedIn"));
-  // Behet logout
+  // Goes logout
   const logout = () => {
     localStorage.removeItem("loggedIn");
   };
@@ -22,8 +22,6 @@ const NavigateBar = () => {
               alt="Main logo"
               src={AutoLogo}
               className="MainLogo"
-              // width="350"
-              // height="50"
               />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
