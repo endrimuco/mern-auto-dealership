@@ -58,7 +58,6 @@ This project uses the following open source packages:
 
 ## Errors to be fixed:
 - Login auth not working.
-- Fix classes clearing out.
 
 ## License
 
