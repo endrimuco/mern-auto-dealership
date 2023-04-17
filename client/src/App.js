@@ -8,7 +8,6 @@ import ContactUs from './Components/Contact';
 import LogIn from './Components/Login';
 import Register from './Components/Register';
 import CreateVehicle from './Components/vehicleComp/CreateVehicle';
-import VehicleDetail from './Components/vehicleComp/VehicleDetail';
 import UpdateVehicle from './Components/vehicleComp/UpdateVehicle';
 
  function App() {
@@ -24,7 +23,6 @@ import UpdateVehicle from './Components/vehicleComp/UpdateVehicle';
         <Route path="/register" element={<Register />} />
         <Route path="/createVehicle" element={<CreateVehicle />} />
         <Route path="/update/:id" element={<UpdateVehicle />} />
-        <Route path="/vehicles/:id" element={<VehicleDetail />} />
       </Routes>
     </>
   );
