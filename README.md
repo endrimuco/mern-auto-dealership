@@ -56,9 +56,6 @@ This project uses the following open source packages:
 - Admin dashboard which will be able to CRUD all vehicle cards.
 - Users to be able to write a comment and leave a review.
 
-## Errors to be fixed:
-- Login auth not working.
-
 ## License
 
 MIT
