@@ -1,69 +1,62 @@
 const express = require("express");
-const bcrypt = require("bcrypt"); 
-const userModel = require("../models/user");
+const bcrypt = require("bcrypt");
+const User = require("../models/user");
 
 const app = express();
 
 // Registration of a user.
 app.post("/register", async (req, res) => {
-
   // Info from the form completed by user.
   const userInfo = req.body.user;
-  
-  // Condition of password must have 8 words and plus!
-  if (userInfo.password.length < 8) {
-    return res.send({
-      
-      code: 400,
-      // Console Log.
-      error: "Password must have 8 chars and plus.",
 
+  // Condition of password must have 8 characters or more.
+  if (userInfo.password.length < 8) {
+    return res.status(400).send({
+      code: 400,
+      error: "Password must have 8 characters or more.",
     });
   }
 
-  //  If same email found an error will be shown.
   try {
+    // Check if the email already exists.
+    const foundUser = await User.findOne({
+      $or: [{ email: userInfo.email }, { username: userInfo.username }],
+    }).exec();
 
-    var foundUser = await userModel.findOne(
-      { email: userInfo.email, username: userInfo.email }).exec();
-
-    if (foundUser && foundUser.length != 0) {
-
-      return res.send(
-        { 
-          code: 400, 
-          error: "This email already exists!" 
-        });
+    if (foundUser) {
+      return res.status(400).send({
+        code: 400,
+        error: "This email or username already exists!",
+      });
     }
   } catch (error) {
-
-    return res.send(
-      { 
-        code: 400, 
-        error: error 
-      });
-
+    console.error(error);
+    return res.status(500).send({
+      code: 500,
+      error: "Error occurred while checking for existing user.",
+    });
   }
-   
-  // Encryption of password, using salt it marges 15 random words to make it even difficult to find.
+
+  // Encryption of password using salt.
   const salt = await bcrypt.genSalt(15);
-  
-  
-  // Encrypted password.
-  hashed = await bcrypt.hash(userInfo.password, salt);
+  const hashedPassword = await bcrypt.hash(userInfo.password, salt);
 
-
-  // Frontend infos saving them to database.
-  var user = new userModel({
+  // Save user information to the database.
+  const user = new User({
     username: userInfo.username,
     email: userInfo.email,
-    password: hashed,
+    password: hashedPassword,
   });
 
-  // Saving infos.
-  user.save(function (error, userCreated) {
-    if (error) return handleError(error);
-    var resError = {
+  user.save((error, userCreated) => {
+    if (error) {
+      console.error(error);
+      return res.status(500).send({
+        code: 500,
+        error: "Error occurred while saving user.",
+      });
+    }
+    const resError = {
       code: 200,
       message: "User has been saved successfully",
     };
@@ -73,61 +66,43 @@ app.post("/register", async (req, res) => {
 
 // Login auth.
 app.post("/checkLogin", async (req, res) => {
+  // Data for email or username and password to login.
+  const { email, username, password } = req.body.user;
 
-  // Data for only email and password to login.
-  const email = req.body.user.email;
-  const username = req.body.user.username;
-  const password = req.body.user.password;
-
-// Finding data of user from email in database.
-var user = await userModel.findOne({ $or: [ {email: email }, {username: username} ] }).exec();
-  
-  // Verification of password and decryption of it.
-  if (user && user.length != 0) {
-   
-    // Decryption of password.
-    bcrypt.compare(password, user.password, function (error, result) {
-      if (result) {
-
-        // If found access granted.
-        res.send(
-          { 
-            code: 200, 
-            user: user 
-          });
-z
-      } else {
-
-        // Else not.
-      res.send(
-        { 
-          code: 400, 
-          error: "Enter valid credentials." 
-        });
-    }
+  try {
+    // Find user account with email or username.
+    const user = await User.findOne({
+      $or: [{ email: email }, { username: username }],
     });
-  }
 
-  // If user not found.
-  else {
-
-    res.send(
-      { 
-        code: 400, 
-        error: "Enter valid credentials" 
+    if (user) {
+      // Compare the provided password with the stored hashed password.
+      bcrypt.compare(password, user.password, (error, result) => {
+        if (result) {
+          // If password matches, access granted.
+          res.send({ code: 200, user: user });
+        } else {
+          // If password doesn't match.
+          res.status(400).send({ code: 400, error: "Enter valid credentials." });
+        }
       });
-
+    } else {
+      // If user not found.
+      res.status(400).send({ code: 400, error: "Enter valid credentials." });
+    }
+  } catch (error) {
+    console.error(error);
+    res.status(500).send({ code: 500, error: "Internal Server Error" });
   }
 });
 
-// Function of user logout.
+// Function for user logout.
 app.get("/logout", (req, res) => {
-  var resError = {
+  const resError = {
     code: 200,
     message: "User has been logged out!",
   };
   res.send(resError);
 });
-
 
 module.exports = app;
